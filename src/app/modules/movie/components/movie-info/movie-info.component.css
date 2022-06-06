@@ -1,0 +1,42 @@
+.movieInfoContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  column-gap: 30px;
+}
+
+.movieInfoTitle{
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.overview{
+  text-align: center;
+}
+
+.genre{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.genreItem{
+  margin: 20px;
+  font-weight: bold;
+}
+
+.rating{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 875px){
+  .movieInfoContainer{
+    flex-direction: column;
+  }
+}
+

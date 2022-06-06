@@ -1,0 +1,13 @@
+<div class="moviesWrapper">
+  <app-movie *ngFor="let movie of movies | paginate: {
+  itemsPerPage: 20, currentPage: currentPage, totalItems: totalPages }"
+             [movie]="movie">
+
+  </app-movie>
+</div>
+
+<div class="paginationContainer">
+  <pagination-controls (pageChange)="change($event)"></pagination-controls>
+</div>
+
+

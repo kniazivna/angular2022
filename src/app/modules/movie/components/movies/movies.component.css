@@ -1,0 +1,24 @@
+.moviesWrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+app-movie{
+  min-width: 300px;
+  min-height: 500px;
+  border: 1px solid antiquewhite;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.paginationContainer{
+text-align: center;
+  margin-top: 25px;
+}
+
+.ngx-pagination .current{
+  background: red !important;
+}
