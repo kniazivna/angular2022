@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 
 import {GenreService, MoviesService} from '../../services';
@@ -12,6 +12,9 @@ import {IGenre} from "../../interfaces/genre.interface";
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
+
+  @Input()
+  genre: IGenre;
 
   movies: IMovie[];
   genres: IGenre[];

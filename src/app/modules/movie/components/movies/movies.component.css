@@ -19,6 +19,9 @@ text-align: center;
   margin-top: 25px;
 }
 
-.ngx-pagination .current{
-  background: red !important;
+
+.genres{
+  margin: 20px auto;
+  width: 10%;
+  height: 20px;
 }

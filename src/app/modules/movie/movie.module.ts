@@ -8,20 +8,24 @@ import {MoviesService} from './services';
 import { MoviesComponent } from './components/movies/movies.component';
 import { MovieComponent } from './components/movie/movie.component';
 import {MovieInfoComponent} from './components/movie-info/movie-info.component';
-
-
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatOptionModule} from "@angular/material/core";
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   declarations: [
     MoviesComponent,
     MovieComponent,
-    MovieInfoComponent
+    MovieInfoComponent,
   ],
   imports: [
     CommonModule,
     MovieRoutingModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatFormFieldModule,
+    MatOptionModule,
+    MatSelectModule
   ],
   providers: [
     MoviesService

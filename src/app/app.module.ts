@@ -8,6 +8,10 @@ import {AppRouringModule} from './app-rouring.module';
 import {HeaderComponent} from './components';
 import {FooterComponent} from './components';
 import {LayoutComponent} from './layouts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {MatIconModule} from "@angular/material/icon";
+import {MatListModule} from "@angular/material/list";
 
 
 @NgModule({
@@ -21,7 +25,11 @@ import {LayoutComponent} from './layouts';
     BrowserModule,
     HttpClientModule,
     AppRouringModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

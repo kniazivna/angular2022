@@ -1,9 +1,17 @@
 .container{
   display: flex;
-  justify-content: space-around;
-  padding: 0 20%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  min-height: 50px;
+}
+
+.mat-slide-toggle{
+  text-align: center;
 }
 
 .active{
   color: red;
 }
+
+
