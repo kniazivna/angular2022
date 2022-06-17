@@ -1,12 +1,3 @@
-<div class="genres">
- <mat-form-field appearance="fill">
-     <mat-label>Sort by genres</mat-label>
-     <mat-select>
-       <mat-option aria-checked="false" *ngFor="let genre of genres" [value]="genre">{{genre.name}}
-       </mat-option>
-     </mat-select>
-   </mat-form-field>
-</div>
 <div class="moviesWrapper">
   <app-movie *ngFor="let movie of movies | paginate: {
   itemsPerPage: 20, currentPage: currentPage, totalItems: totalPages }"

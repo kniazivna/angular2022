@@ -3,9 +3,7 @@
   <div class="movieContainer" [routerLink]="[movie.id]"  [state]= "{movie}">
     <img src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}" alt="{{movie.original_title}} poster"/>
     <div class="info">{{movie.title}}</div>
-    <div> {{movie.genre_ids}}</div>
     <div class="info">Release date: {{movie.release_date}}</div>
   </div>
 
 </div>
-

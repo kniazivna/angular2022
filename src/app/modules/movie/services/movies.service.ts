@@ -19,10 +19,11 @@ export class MoviesService {
   }
 
   getAll(page: number): Observable<IResponse> {
-    return this.httpClient.get<IResponse>(urls.movies + page);
+    return this.httpClient.get<IResponse>(urls.movies + `&page=${page}`);
   }
 getById(id:number): Observable<any>{
   return this.httpClient.get<any>(urls.movieById + `/${id}`+`?api_key=${API_KEY}` );
+
 }
 
 }

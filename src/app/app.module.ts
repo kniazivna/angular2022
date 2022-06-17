@@ -4,7 +4,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {RouterModule} from "@angular/router";
 
 import { AppComponent } from './app.component';
-import {AppRouringModule} from './app-rouring.module';
+import {AppRoutingModule} from './app-routing.module';
 import {HeaderComponent} from './components';
 import {FooterComponent} from './components';
 import {LayoutComponent} from './layouts';
@@ -24,7 +24,7 @@ import {MatListModule} from "@angular/material/list";
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRouringModule,
+    AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,

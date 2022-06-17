@@ -6,4 +6,13 @@
 
 main{
   flex: 1 1 auto;
+  padding: 0 15px;
+}
+
+main.dark{
+  background-color: rgba(128, 0, 128, 0.9);
+}
+
+main.light{
+  background-color: rgba(128, 0, 128, 0.2);
 }

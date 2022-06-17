@@ -6,9 +6,10 @@ import {LayoutComponent} from "./layouts";
 const routes: Routes = [
   {
     path: '', component: LayoutComponent, children: [
-      {path: '', redirectTo: 'movies', pathMatch: 'full'},
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'movies', loadChildren: () => import('./modules/movie/movie.module').then(value => value.MovieModule)},
-      {path: 'auth', loadChildren: () => import('./modules/auth/auth.module').then(value => value.AuthModule)},
+      {path: 'login', loadChildren: () => import('./modules/login/login.module').then(value => value.LoginModule)},
+      {path: 'registration', loadChildren: () => import('./modules/registration/registration.module').then(value => value.RegistrationModule)},
     ]
   }
 ]
@@ -20,5 +21,5 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
   ]
 })
-export class AppRouringModule {
+export class AppRoutingModule {
 }

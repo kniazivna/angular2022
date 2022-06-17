@@ -1,7 +1,6 @@
 
 import {Component, Input, OnInit} from '@angular/core';
 import {IMovie} from "../../interfaces";
-import {IGenre} from "../../interfaces/genre.interface";
 
 @Component({
   selector: 'app-movie',
@@ -9,8 +8,6 @@ import {IGenre} from "../../interfaces/genre.interface";
   styleUrls: ['./movie.component.css']
 })
 export class MovieComponent implements OnInit {
-
-  genres: IGenre[]
 
   @Input()
   movie: IMovie;

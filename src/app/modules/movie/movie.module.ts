@@ -27,6 +27,9 @@ import {MatSelectModule} from "@angular/material/select";
     MatOptionModule,
     MatSelectModule
   ],
+  exports: [
+    MoviesComponent
+  ],
   providers: [
     MoviesService
   ]
