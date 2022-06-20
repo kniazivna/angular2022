@@ -1,4 +1,4 @@
-<div class="moviesWrapper">
+<div class="moviesWrapper" *ngIf="movies">
   <app-movie *ngFor="let movie of movies | paginate: {
   itemsPerPage: 20, currentPage: currentPage, totalItems: totalPages }"
              [movie]="movie">

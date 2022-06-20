@@ -2,16 +2,18 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule} from "@angular/router";
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {MatIconModule} from "@angular/material/icon";
+import {MatListModule} from "@angular/material/list";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HeaderComponent} from './components';
 import {FooterComponent} from './components';
 import {LayoutComponent} from './layouts';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSlideToggleModule} from "@angular/material/slide-toggle";
-import {MatIconModule} from "@angular/material/icon";
-import {MatListModule} from "@angular/material/list";
+
+
 
 
 @NgModule({

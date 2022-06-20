@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 import {MoviesService} from '../../services';
 import {IMovie} from '../../interfaces';
+import {ActivatedRoute, Route} from "@angular/router";
 
 @Component({
   selector: 'app-movies',
@@ -31,5 +32,5 @@ export class MoviesComponent implements OnInit {
   change(event: number) {
         this.currentPage = event;
         this.getAll();
-      }
+  }
     }
